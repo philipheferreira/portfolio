@@ -1,0 +1,285 @@
+body{ 
+    width:  95%;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;	
+    color: #222;
+    background: #eee;
+}
+
+.imagem {
+  text-align: center;
+}
+
+ .imagem img {
+  padding: 5px;
+  border-radius: 50%;
+  margin-top: 25px;
+  background: #fff; /* borda branca circular da minha foto */
+  max-width:250px;
+  text-align: center;
+}
+.container {
+  max-width: 700px;   
+  margin: 0px auto 0px; 
+  box-shadow: 0px 15px 35px #DAD7D7;
+  border-radius: 3px;  
+  padding: 40px;
+  margin-top: 50px;
+  background: #fff;
+} /* Para inicio da organização. provavelmente vou tirar depois */
+
+.nomeCompleto{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  
+  .primeiroNome{
+    font-weight: 700;
+  }
+  
+  .ultimoNome{
+    font-weight: 300;
+  }
+  
+  .contato-info{
+    margin-bottom: 20px;
+  }
+  
+  .email, .telefone {
+    color: #999;
+    font-weight: 300;
+  } 
+
+  .esquerda, .direita{
+    vertical-align: top;
+    display: inline-block;
+  }
+  
+  .esquerda{
+    width: 60%;    
+  }
+  
+  .direita{
+    text-align: right;
+    width: 39%;    
+  }
+
+  .fundoCima{ 
+    text-align:center;
+    background-color:#383839;
+    color:#fff;
+    padding:5%;
+   }
+
+  h3, h2{
+    text-decoration: underline;
+    }
+
+
+table{
+    border: 1px dashed black;
+    }
+
+td{
+    padding: 2px;
+    border: 1px solid #00CED1;
+    }
+
+
+
+    #textoDestaque{
+    font-weight:bold;
+    }
+
+#cabecalho{
+    font-weight:bold;
+    }
+
+    /* Barras de habilidades referentes as linguagens de programação */
+
+     .habilidades {
+                margin: 10px 0 20px;
+                list-style: none;
+                padding: 0;
+            }
+
+                 .habilidades li {
+                    margin-bottom: 3px;
+                    height: 40px;
+                }
+
+            .habilidade span {
+                float: left;
+                width: 100px;
+            }
+
+            .habilidade .b {
+                float: left;
+                width: 70%;
+                margin-left: 10px;
+                background: rgba(141,149,167,.2);
+            }
+
+
+             .habilidades .b .eighty {
+                height: calc(2em);
+                background: #2D7FB9;
+            }
+
+
+/* Fim das barras de habilidade referente aos conhecimentos de programação */
+
+
+/* Começo graficos circulares ferentes aos frameworks de criação de sites e aplicativos usando svg */
+.graficoCircular{ 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    min-height: 100vh;
+ }
+
+ .containergraf{ 
+   width: 900px;
+   display: flex;
+   flex-wrap: wrap; 
+   justify-content: space-around;
+ }
+
+ .containergraf .carde{ 
+    position: relative;
+    width: 200px;
+    height: 250px;
+    text-align: center;
+    z-index: 10;
+    margin: 20px 20px 60px;
+ }
+
+ .containergraf .carde .box{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 35px rgb(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+    z-index: 10;
+    border-radius: 10px;
+    background: #c1c1c1;
+ }
+
+ .porcentagem { 
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 100;
+
+ }
+
+ .porcentagem .numeros{ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .porcentagem .numeros h2{
+    
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .porcentagem .numeros h2 span{ 
+    font-size: 20px
+  }
+
+  .texto{ 
+    position: absolute;
+    bottom: -42px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 30px 20px 10px;
+    background: #f00;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    pointer-events: none;
+    transition: bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
+    transition-delay: 0.5s, 0.5s, 0s, 0.5s;
+    color: #fff;
+  }
+
+  .carde:hover .texto{ 
+    transition-delay: 0s, 0.5s, 0.5s, 0s;
+    bottom: -70px;
+    z-index: 11;
+    transform: translateX(-50%) translateY(-50px);
+    padding: 10px 20px 10px;
+  }
+
+  .carde:nth-child(1) .texto{ 
+    background: #18d539;
+  }
+  .carde:nth-child(2) .texto{ 
+    background: #2bd2ff;
+  }
+  .carde:nth-child(3) .texto{ 
+    background: #00ffff;
+  }
+
+  svg{ 
+    position: relative;
+    width: 150px;
+    height: 150px;
+    
+   }
+
+  svg circle{ 
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke: rgba(255,255,255, 0.05);
+    transform: translate(5px,5px);
+    stroke-linecap: round;
+  }
+
+  svg circle:nth-child(2){ 
+    stroke: #fff;
+    stroke-dasharray: 440px;
+    stroke-dashoffset: 110px;
+
+  }
+
+  .carde:nth-child(1) svg circle:nth-child(2){ 
+stroke-dashoffset: calc(440px - (440px * 2)/ 100);
+  }
+
+  .carde:nth-child(2) svg circle:nth-child(2){ 
+stroke-dashoffset: calc(440px - (440px * 7)/ 100);
+  }
+
+.carde:nth-child(3) svg circle:nth-child(2){ 
+stroke-dashoffset: calc(440px - (440px * 5)/ 100);
+  }
+
+
+/* fim graficos circulares ferentes aos frameworks de criação de sites e aplicativos usando svg */
